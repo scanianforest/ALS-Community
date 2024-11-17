@@ -58,9 +58,9 @@ void AALSPlayerController::SetupInputComponent()
 	UEnhancedInputComponent* EnhancedInputComponent = Cast<UEnhancedInputComponent>(InputComponent);
 	if (EnhancedInputComponent)
 	{
-		EnhancedInputComponent->ClearActionEventBindings();
-		EnhancedInputComponent->ClearActionValueBindings();
-		EnhancedInputComponent->ClearDebugKeyBindings();
+		// EnhancedInputComponent->ClearActionEventBindings();
+		// EnhancedInputComponent->ClearActionValueBindings();
+		// EnhancedInputComponent->ClearDebugKeyBindings();
 
 		BindActions(DefaultInputMappingContext);
 		BindActions(DebugInputMappingContext);
